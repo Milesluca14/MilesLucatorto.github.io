@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Miles Lucatorto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Technical style font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top navigation -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <div class="nav-name">Miles Lucatorto</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero section with two columns -->
+    <section class="hero section" id="top">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hero-label">Mechanical Engineering Student at UConn</p>
+          <h1 class="hero-title">I build systems, models, and hardware that actually move and work.</h1>
+          <p class="hero-body">
+            I study mechanical engineering at the University of Connecticut and focus on design, analysis, and real fabrication.
+            I enjoy turning rough ideas into clean models, prototypes, and tested solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View projects</a>
+            <a href="#contact" class="btn secondary">Contact me</a>
+          </div>
+
+          <div class="hero-meta">
+            <span>Design and analysis</span>
+            <span>Prototyping</span>
+            <span>Hands on problem solving</span>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <!-- Replace src with your real headshot later -->
+          <div class="photo-frame">
+            <img src="headshot-placeholder.jpg" alt="Headshot of Miles Lucatorto" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About and coursework / interests in two columns -->
+    <section class="section fade-section" id="about">
+      <div class="section-header">
+        <h2>About</h2>
+        <p>A quick picture of what I care about as an engineer.</p>
+      </div>
+
+      <div class="two-column">
+        <div>
+          <p>
+            I am a mechanical engineering student who cares about clear reasoning, solid design, and clean execution.
+            I like work that lives in the space between analytical models and physical builds.
+          </p>
+          <p>
+            I enjoy mechanical design, CAD, simulation, and then moving into fabrication and testing.
+            I want my work to be reliable, understandable, and easy for others to build on.
+          </p>
+        </div>
+        <div>
+          <h3>Coursework and interests</h3>
+          <ul class="tag-list">
+            <li>Mechanics and materials</li>
+            <li>Dynamics and controls</li>
+            <li>Thermal and fluids</li>
+            <li>CAD and parametric modeling</li>
+            <li>Finite element analysis</li>
+            <li>Manufacturing methods</li>
+            <li>Robotics and mechatronics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section fade-section" id="skills">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <p>Technical tools and abilities that I actually use.</p>
+      </div>
+
+      <div class="two-column">
+        <div>
+          <h3>Design and modeling</h3>
+          <ul>
+            <li>3D CAD modeling and assemblies</li>
+            <li>Mechanical layout and packaging</li>
+            <li>Design for manufacturing and assembly</li>
+          </ul>
+
+          <h3>Analysis</h3>
+          <ul>
+            <li>Static and dynamic analysis</li>
+            <li>Finite element analysis for stress and deflection</li>
+            <li>Basic thermal and fluid calculations</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Tools and software</h3>
+          <ul>
+            <li>CAD: add tools you use here</li>
+            <li>FEA: add tools you use here</li>
+            <li>Programming: Python, MATLAB, or others you use</li>
+            <li>Version control and GitHub</li>
+          </ul>
+
+          <h3>Hands on</h3>
+          <ul>
+            <li>3D printing and basic machining</li>
+            <li>Assembly and test</li>
+            <li>Lab documentation and reporting</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects with expandable cards -->
+    <section class="section fade-section" id="projects">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>Engineering projects where I designed, analyzed, and built something real.</p>
+      </div>
+
+      <div class="card-grid">
+        <!-- Project card 1 -->
+        <article class="card project-card">
+          <header class="card-header">
+            <h3>Project title one</h3>
+            <p class="card-subtitle">Short phrase that explains what this project is about.</p>
+          </header>
+          <div class="card-main">
+            <p>
+              One or two sentences that describe the core idea of the project and what you were trying to achieve.
+            </p>
+
+            <!-- Expandable content -->
+            <div class="card-more">
+              <h4>My role</h4>
+              <p>
+                Describe what you were responsible for. For example, concept design, detailed CAD, FEA, and testing.
+              </p>
+
+              <h4>Technical details</h4>
+              <ul>
+                <li>List the main technical challenges.</li>
+                <li>Mention any models, simulations, or calculations.</li>
+                <li>Note the tools and methods you used.</li>
+              </ul>
+
+              <h4>Outcome</h4>
+              <p>
+                Explain what worked, what you learned, and what you would improve in a next iteration.
+              </p>
+
+              <div class="card-media">
+                <!-- Add one or more photos of the build -->
+                <img src="project1-photo1.jpg" alt="Photo of project one" />
+                <img src="project1-photo2.jpg" alt="Another view of project one" />
+              </div>
+            </div>
+
+            <button class="toggle-card btn tertiary" type="button">
+              Show full details
+            </button>
+          </div>
+        </article>
+
+        <!-- Project card 2 -->
+        <article class="card project-card">
+          <header class="card-header">
+            <h3>Project title two</h3>
+            <p class="card-subtitle">Another project that shows different strengths.</p>
+          </header>
+          <div class="card-main">
+            <p>
+              A compact summary of the project outcome and why it matters for engineering work.
+            </p>
+
+            <div class="card-more">
+              <h4>My role</h4>
+              <p>
+                Describe how you contributed in a clear and specific way.
+              </p>
+
+              <h4>Technical details</h4>
+              <ul>
+                <li>Mass and strength constraints you had to respect.</li>
+                <li>Important design choices you made and why.</li>
+                <li>How you validated that the design worked.</li>
+              </ul>
+
+              <div class="card-media">
+                <img src="project2-photo1.jpg" alt="Photo of project two" />
+              </div>
+            </div>
+
+            <button class="toggle-card btn tertiary" type="button">
+              Show full details
+            </button>
+          </div>
+        </article>
+
+        <!-- You can copy and paste more project cards here -->
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section fade-section" id="experience">
+      <div class="section-header">
+        <h2>Experience</h2>
+        <p>Internships, part time roles, and other hands on experience.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Role title, Company</h3>
+            <p class="timeline-meta">Location · Dates</p>
+            <ul>
+              <li>Describe a clear result you delivered.</li>
+              <li>Explain what you owned, not just what the team did.</li>
+              <li>Mention specific tools, tests, or measurements.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Another role or project</h3>
+            <p class="timeline-meta">Location · Dates</p>
+            <ul>
+              <li>Focus on what you did that shows engineering judgment.</li>
+              <li>Call out any cross functional collaboration.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section fade-section" id="education">
+      <div class="section-header">
+        <h2>Education</h2>
+        <p>Academic background that supports my engineering work.</p>
+      </div>
+
+      <div class="two-column">
+        <div>
+          <h3>University of Connecticut</h3>
+          <p>Bachelor of Science in Mechanical Engineering</p>
+          <p class="timeline-meta">Expected graduation: add year here</p>
+          <ul>
+            <li>Relevant coursework that connects to your interests.</li>
+            <li>Any research, labs, or student groups.</li>
+            <li>Academic honors or awards if applicable.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Focus areas</h3>
+          <ul>
+            <li>Design and analysis of mechanical systems</li>
+            <li>Manufacturing and prototyping</li>
+            <li>Robotics and automation if relevant</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery for build photos -->
+    <section class="section fade-section" id="gallery">
+      <div class="section-header">
+        <h2>Gallery</h2>
+        <p>Photos of builds, prototypes, and other tangible work.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Replace these with your images -->
+        <figure class="gallery-item">
+          <img src="gallery1.jpg" alt="Build or prototype photo one" />
+          <figcaption>Short caption that explains what this is.</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="gallery2.jpg" alt="Build or prototype photo two" />
+          <figcaption>Another short explanation.</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="gallery3.jpg" alt="Lab or test setup" />
+          <figcaption>Describe what you measured or tested.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="section fade-section" id="contact">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Reach out for roles, collaborations, or questions.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:your-email@uconn.edu">your-email@uconn.edu</a>
+          </p>
+
+          <h3>LinkedIn</h3>
+          <p>
+            <a href="https://www.linkedin.com/in/your-linkedin-handle" target="_blank" rel="noreferrer">
+              linkedin.com/in/your-linkedin-handle
+            </a>
+          </p>
+
+          <h3>GitHub</h3>
+          <p>
+            <a href="https://github.com/mileslucatorto" target="_blank" rel="noreferrer">
+              github.com/mileslucatorto
+            </a>
+          </p>
+        </div>
+        <div>
+          <h3>Resume</h3>
+          <p>
+            Add a link to a PDF of your resume here once it is in this repository.
+          </p>
+          <p>
+            <a href="resume.pdf" class="btn primary">Download resume</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Miles Lucatorto</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
