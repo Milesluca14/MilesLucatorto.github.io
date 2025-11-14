@@ -1,38 +1,42 @@
-// Fade-in animation:
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.2 }
-);
+// Dark / light mode toggle
+const themeToggle = document.getElementById("theme-toggle");
 
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+function applyTheme(mode) {
+  if (mode === "dark") {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
+}
 
-// Expandable gallery
+// Load stored theme
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  applyTheme("dark");
+} else {
+  applyTheme("light");
+}
+
+// Handle toggle click
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const isDark = document.body.classList.contains("dark-mode");
+    const newMode = isDark ? "light" : "dark";
+    applyTheme(newMode);
+    localStorage.setItem("theme", newMode);
+  });
+}
+
+// Simple gallery preview toggle (no animation)
 const galleryToggle = document.getElementById("gallery-toggle");
-const galleryPanel = document.getElementById("gallery-panel");
+const galleryPreview = document.getElementById("gallery-preview");
 
-if (galleryToggle && galleryPanel) {
+if (galleryToggle && galleryPreview) {
   let open = false;
 
   galleryToggle.addEventListener("click", () => {
     open = !open;
-
-    if (open) {
-      galleryPanel.classList.add("open");
-      galleryPanel.style.maxHeight = galleryPanel.scrollHeight + "px";
-      galleryToggle.textContent = "Hide gallery";
-    } else {
-      galleryPanel.style.maxHeight = galleryPanel.scrollHeight + "px";
-      void galleryPanel.offsetHeight; 
-      galleryPanel.style.maxHeight = "0";
-      galleryPanel.classList.remove("open");
-      galleryToggle.textContent = "Show gallery";
-    }
+    galleryPreview.style.display = open ? "block" : "none";
+    galleryToggle.textContent = open ? "Hide gallery preview" : "Show gallery preview";
   });
 }
