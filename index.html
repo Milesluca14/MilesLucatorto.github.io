@@ -11,6 +11,14 @@
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
 
+  <!-- LinkedIn badge script (required by LinkedIn) -->
+  <script
+    src="https://platform.linkedin.com/badges/js/profile.js"
+    async
+    defer
+    type="text/javascript">
+  </script>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body id="top">
@@ -22,17 +30,14 @@
         <div class="hero-text">
           <h1 class="hero-title-main">Miles Lucatorto</h1>
 
-          <!-- REPLACE: short tagline -->
           <p class="hero-tag">
             <span class="code-keyword">student</span> · Mechanical Engineering @ University of Connecticut
           </p>
 
-          <!-- REPLACE: hero intro paragraph -->
           <p class="hero-intro">
             I’m a Mechanical Engineering student at the University of Connecticut who’s motivated by solving problems and making ideas work in the real world. I enjoy bringing technical and creative thinking together, whether I’m designing parts in CAD, machining components, or testing systems to improve performance.
           </p>
 
-          <!-- REPLACE: education line if you want -->
           <p class="hero-education-line">
             B.S. Mechanical Engineering || Class of 2029
           </p>
@@ -59,7 +64,6 @@
         <div>
           <h2>About</h2>
 
-          <!-- REPLACE: about paragraph -->
           <p>
             I am a Mechanical Engineering student at the University of Connecticut interested in design, manufacturing, and hands-on engineering. I like work that balances analysis with real builds, where the design has to fit, function, and be maintainable. I care about clear communication, clean CAD, and projects that teach something new every time.
           </p>
@@ -67,67 +71,79 @@
 
         <div>
           <h3>Contact me</h3>
-          <!-- REPLACE: quick contact summary -->
           <p>Email: Miles.lucatorto@gmail.com</p>
 
-          <!-- LinkedIn window/card -->
-          <div class="contact-card linkedin-card">
-            <div class="linkedin-icon-box">
-              <span class="linkedin-icon-text">in</span>
+          <!-- LinkedIn badge wrapper -->
+          <div class="linkedin-badge-wrapper">
+            <p class="linkedin-badge-title">LinkedIn</p>
+
+            <!-- Light mode badge -->
+            <div class="linkedin-badge linkedin-badge-light">
+              <div
+                class="badge-base LI-profile-badge"
+                data-locale="en_US"
+                data-size="medium"
+                data-theme="light"
+                data-type="HORIZONTAL"
+                data-vanity="miles-lucatorto"
+                data-version="v1">
+                <a
+                  class="badge-base__link LI-simple-link"
+                  href="https://www.linkedin.com/in/miles-lucatorto?trk=profile-badge">
+                  Miles Lucatorto
+                </a>
+              </div>
             </div>
-            <div class="linkedin-text-block">
-              <p class="linkedin-label">LinkedIn</p>
-              <p class="linkedin-handle">/in/miles-lucatorto</p>
-              <a
-                href="https://www.linkedin.com/in/miles-lucatorto"
-                target="_blank"
-                rel="noreferrer"
-                class="btn linkedin-btn"
-              >
-                View LinkedIn profile
-              </a>
+
+            <!-- Dark mode badge -->
+            <div class="linkedin-badge linkedin-badge-dark">
+              <div
+                class="badge-base LI-profile-badge"
+                data-locale="en_US"
+                data-size="medium"
+                data-theme="dark"
+                data-type="HORIZONTAL"
+                data-vanity="miles-lucatorto"
+                data-version="v1">
+                <a
+                  class="badge-base__link LI-simple-link"
+                  href="https://www.linkedin.com/in/miles-lucatorto?trk=profile-badge">
+                  Miles Lucatorto
+                </a>
+              </div>
             </div>
           </div>
+          <!-- END LinkedIn badge wrapper -->
         </div>
       </div>
     </section>
     <!-- END ABOUT -->
 
-    <!-- BEGIN SKILLS + INVOLVEMENT PREVIEW -->
+    <!-- BEGIN PROFILE IMAGE + INVOLVEMENT -->
     <section class="section">
       <div class="section-inner two-column">
-        <!-- Skills -->
+        <!-- Large image of you -->
         <div>
-          <h2>Skills</h2>
-
-          <!-- REPLACE: edit or expand this list -->
-          <ul>
-            <li>CAD: SolidWorks</li>
-            <li>CAD: Fusion 360</li>
-            <li>CAD: AutoCAD</li>
-            <li>Basic FEA and simulation exposure</li>
-            <li>3D printing and prototype fabrication</li>
-            <li>Basic machining and shop work</li>
-            <li>Mechanical assembly and testing</li>
-            <li>Measurement and tolerancing awareness</li>
-            <li>Excel and data organization</li>
-            <li>Documentation and report writing</li>
-            <li>Team collaboration on technical projects</li>
-            <li>Leadership through Scouting</li>
-          </ul>
+          <h2>In the shop</h2>
+          <div class="skills-photo-frame">
+            <!-- REPLACE: file of you working / larger image -->
+            <img src="PROFILE_SECTION_IMAGE_FILE" alt="Miles working on a project" />
+          </div>
+          <!-- Optional caption – edit or delete -->
+          <p class="skills-photo-caption">
+            SHORT_CAPTION_PLACEHOLDER
+          </p>
         </div>
 
         <!-- Involvement -->
         <div>
           <h2>Involvement</h2>
 
-          <!-- Formula SAE preview -->
           <div class="mini-panel">
             <h3>
               Formula SAE
-              <span class="involvement-dates">2025 – Present</span> <!-- REPLACE -->
+              <span class="involvement-dates">2025 – Present</span>
             </h3>
-            <!-- REPLACE: short Formula SAE summary -->
             <p>
               Work on the design and development of a student-built race car, contributing to CAD, packaging, and subsystem collaboration.
             </p>
@@ -136,13 +152,11 @@
             </p>
           </div>
 
-          <!-- BSA preview -->
           <div class="mini-panel">
             <h3>
               Boy Scouts of America
-              <span class="involvement-dates">2018 – Present</span> <!-- REPLACE -->
+              <span class="involvement-dates">2018 – Present</span>
             </h3>
-            <!-- REPLACE: short BSA summary -->
             <p>
               Senior Patrol Leader and Eagle Scout candidate in Troop 4, Floral Park, NY, responsible for planning, training, and leading scouts.
             </p>
@@ -151,13 +165,11 @@
             </p>
           </div>
 
-          <!-- Robotics preview -->
           <div class="mini-panel">
             <h3>
               Robotics
-              <span class="involvement-dates">2022 – 2025</span> <!-- REPLACE -->
+              <span class="involvement-dates">2022 – 2025</span>
             </h3>
-            <!-- REPLACE: short Robotics summary -->
             <p>
               Experience with 4017 RoboPandas, contributing to fabrication, assembly, testing, and event support at competitions.
             </p>
@@ -168,7 +180,7 @@
         </div>
       </div>
     </section>
-    <!-- END SKILLS + INVOLVEMENT PREVIEW -->
+    <!-- END PROFILE IMAGE + INVOLVEMENT -->
 
     <!-- BEGIN EDUCATION -->
     <section class="section">
@@ -176,10 +188,8 @@
         <div>
           <h2>Education</h2>
 
-          <!-- UConn -->
           <div class="school-entry">
             <div class="school-logo-box">
-              <!-- REPLACE: UConn logo file if you want one -->
               <img src="Uconn.png" alt="UConn.png" />
             </div>
             <div>
@@ -188,10 +198,8 @@
             </div>
           </div>
 
-          <!-- Floral Park -->
           <div class="school-entry">
             <div class="school-logo-box">
-              <!-- REPLACE: Floral Park logo file -->
               <img src="FPM.png" alt="FPM.png" />
             </div>
             <div>
@@ -200,10 +208,8 @@
             </div>
           </div>
 
-          <!-- Sewanhaka CTE -->
           <div class="school-entry">
             <div class="school-logo-box">
-              <!-- REPLACE: Sewanhaka logo file -->
               <img src="SHS.png" alt="SHS.png" />
             </div>
             <div>
@@ -216,7 +222,6 @@
         <div>
           <h3>Certifications & awards</h3>
           <ul>
-            <!-- REPLACE: real items -->
             <li>Architectural Design 1 Career Certification (YouScience)</li>
             <li>Community Service & Leadership Award</li>
             <li>Eagle Scout Candidate</li>
@@ -225,6 +230,28 @@
       </div>
     </section>
     <!-- END EDUCATION -->
+
+    <!-- NEW SKILLS SECTION (MOVED DOWN) -->
+    <section class="section">
+      <div class="section-inner">
+        <h2>Skills</h2>
+        <ul>
+          <li>CAD: SolidWorks</li>
+          <li>CAD: Fusion 360</li>
+          <li>CAD: AutoCAD</li>
+          <li>Basic FEA and simulation exposure</li>
+          <li>3D printing and prototype fabrication</li>
+          <li>Basic machining and shop work</li>
+          <li>Mechanical assembly and testing</li>
+          <li>Measurement and tolerancing awareness</li>
+          <li>Excel and data organization</li>
+          <li>Documentation and report writing</li>
+          <li>Team collaboration on technical projects</li>
+          <li>Leadership through Scouting</li>
+        </ul>
+      </div>
+    </section>
+    <!-- END SKILLS SECTION -->
 
     <!-- BEGIN GALLERY PREVIEW -->
     <section class="section">
@@ -238,7 +265,6 @@
 
         <div id="gallery-preview" class="gallery-preview">
           <div class="gallery-grid">
-            <!-- REPLACE: small sample images -->
             <figure class="gallery-item">
               <div class="gallery-window">
                 <img src="GALLERY_IMAGE_ONE_FILE" alt="Gallery image one" />
@@ -269,30 +295,17 @@
     </section>
     <!-- END GALLERY PREVIEW -->
 
-    <!-- BEGIN CONTACT -->
+    <!-- BEGIN CONTACT (BOTTOM) -->
     <section class="section">
       <div class="section-inner">
         <h2>Contact me</h2>
         <p>Email: Miles.lucatorto@gmail.com</p>
-
-        <!-- Second LinkedIn window in bottom contact section (can remove if you only want one) -->
-        <div class="contact-card linkedin-card">
-          <div class="linkedin-icon-box">
-            <span class="linkedin-icon-text">in</span>
-          </div>
-          <div class="linkedin-text-block">
-            <p class="linkedin-label">LinkedIn</p>
-            <p class="linkedin-handle">/in/miles-lucatorto</p>
-            <a
-              href="https://www.linkedin.com/in/miles-lucatorto"
-              target="_blank"
-              rel="noreferrer"
-              class="btn linkedin-btn"
-            >
-              View LinkedIn profile
-            </a>
-          </div>
-        </div>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/miles-lucatorto" target="_blank" rel="noreferrer">
+            linkedin.com/in/miles-lucatorto
+          </a>
+        </p>
       </div>
     </section>
     <!-- END CONTACT -->
