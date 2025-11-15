@@ -69,167 +69,177 @@
 
     <!-- MAIN GRID: Skills / In the shop / Education / Contact / Involvement -->
     <section class="section">
-      <div class="layout-grid">
+      <div class="section-inner main-grid">
 
-        <!-- Skills (top-left) -->
-        <section class="block-card skills-block">
-          <h2>Skills</h2>
-          <ul>
-            <li>CAD: SolidWorks</li>
-            <li>CAD: Fusion 360</li>
-            <li>CAD: AutoCAD</li>
-            <li>Basic FEA and simulation exposure</li>
-            <li>3D printing and prototype fabrication</li>
-            <li>Basic machining and shop work</li>
-            <li>Mechanical assembly and testing</li>
-            <li>Measurement and tolerancing awareness</li>
-            <li>Excel and data organization</li>
-            <li>Documentation and report writing</li>
-            <li>Team collaboration on technical projects</li>
-            <li>Leadership through Scouting</li>
-          </ul>
-        </section>
+        <!-- LEFT COLUMN: Skills, then Education, then Contact -->
+        <div class="grid-left">
 
-        <!-- In the shop (top-right image) -->
-        <section class="block-card inshop-block">
-          <h2>In the shop</h2>
-          <div class="profile-photo-frame">
-            <!-- REPLACE: your larger working photo -->
-            <img src="PROFILE_SECTION_IMAGE_FILE" alt="Miles working on a project" />
-          </div>
-          <p class="profile-photo-caption">
-            SHORT_CAPTION_PLACEHOLDER
-          </p>
-        </section>
+          <!-- Skills -->
+          <section class="block-card skills-block">
+            <h2>Skills</h2>
+            <ul>
+              <li>CAD: SolidWorks</li>
+              <li>CAD: Fusion 360</li>
+              <li>CAD: AutoCAD</li>
+              <li>Basic FEA and simulation exposure</li>
+              <li>3D printing and prototype fabrication</li>
+              <li>Basic machining and shop work</li>
+              <li>Mechanical assembly and testing</li>
+              <li>Measurement and tolerancing awareness</li>
+              <li>Excel and data organization</li>
+              <li>Documentation and report writing</li>
+              <li>Team collaboration on technical projects</li>
+              <li>Leadership through Scouting</li>
+            </ul>
+          </section>
 
-        <!-- Education (middle-left) -->
-        <section class="block-card education-block">
-          <h2>Education</h2>
+          <!-- Education -->
+          <section class="block-card education-block">
+            <h2>Education</h2>
 
-          <div class="school-entry">
-            <div class="school-logo-box">
-              <img src="Uconn.png" alt="UConn logo" />
-            </div>
-            <div>
-              <p class="school-name">University of Connecticut</p>
-              <p class="school-details">B.S. Mechanical Engineering · 2025 – 2029</p>
-            </div>
-          </div>
-
-          <div class="school-entry">
-            <div class="school-logo-box">
-              <img src="FPM.png" alt="Floral Park Memorial logo" />
-            </div>
-            <div>
-              <p class="school-name">Floral Park Memorial High School</p>
-              <p class="school-details">High School Diploma · 2019 – 2025</p>
-            </div>
-          </div>
-
-          <div class="school-entry">
-            <div class="school-logo-box">
-              <img src="SHS.png" alt="Sewanhaka logo" />
-            </div>
-            <div>
-              <p class="school-name">Sewanhaka High School · CTE</p>
-              <p class="school-details">Architectural Studies Program · 2022 – 2025</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Contact (bottom-left) -->
-        <section class="block-card contact-block">
-          <h2>Contact</h2>
-          <p>Email: Miles.lucatorto@gmail.com</p>
-
-          <div class="linkedin-badge-wrapper">
-            <p class="linkedin-badge-title">LinkedIn</p>
-
-            <!-- Light badge -->
-            <div class="linkedin-badge linkedin-badge-light">
-              <div
-                class="badge-base LI-profile-badge"
-                data-locale="en_US"
-                data-size="medium"
-                data-theme="light"
-                data-type="HORIZONTAL"
-                data-vanity="miles-lucatorto"
-                data-version="v1">
-                <a
-                  class="badge-base__link LI-simple-link"
-                  href="https://www.linkedin.com/in/miles-lucatorto?trk=profile-badge">
-                  Miles Lucatorto
-                </a>
+            <div class="school-entry">
+              <div class="school-logo-box">
+                <img src="Uconn.png" alt="UConn logo" />
+              </div>
+              <div>
+                <p class="school-name">University of Connecticut</p>
+                <p class="school-details">B.S. Mechanical Engineering · 2025 – 2029</p>
               </div>
             </div>
 
-            <!-- Dark badge -->
-            <div class="linkedin-badge linkedin-badge-dark">
-              <div
-                class="badge-base LI-profile-badge"
-                data-locale="en_US"
-                data-size="medium"
-                data-theme="dark"
-                data-type="HORIZONTAL"
-                data-vanity="miles-lucatorto"
-                data-version="v1">
-                <a
-                  class="badge-base__link LI-simple-link"
-                  href="https://www.linkedin.com/in/miles-lucatorto?trk=profile-badge">
-                  Miles Lucatorto
-                </a>
+            <div class="school-entry">
+              <div class="school-logo-box">
+                <img src="FPM.png" alt="Floral Park Memorial logo" />
+              </div>
+              <div>
+                <p class="school-name">Floral Park Memorial High School</p>
+                <p class="school-details">High School Diploma · 2019 – 2025</p>
               </div>
             </div>
-          </div>
-        </section>
 
-        <!-- Involvement (right column, spanning middle + bottom) -->
-        <section class="block-card involvement-block">
-          <h2>Involvement</h2>
+            <div class="school-entry">
+              <div class="school-logo-box">
+                <img src="SHS.png" alt="Sewanhaka logo" />
+              </div>
+              <div>
+                <p class="school-name">Sewanhaka High School · CTE</p>
+                <p class="school-details">Architectural Studies Program · 2022 – 2025</p>
+              </div>
+            </div>
+          </section>
 
-          <article class="mini-panel">
-            <h3>
-              Formula SAE
-              <span class="involvement-dates">2025 – Present</span>
-            </h3>
-            <p>
-              Work on the design and development of a student-built race car, contributing to CAD, packaging, and subsystem collaboration.
-            </p>
-            <p class="mini-panel-link">
-              <a href="sae.html">See more about Formula SAE →</a>
-            </p>
-          </article>
+          <!-- Contact -->
+          <section class="block-card contact-block">
+            <h2>Contact</h2>
+            <p>Email: Miles.lucatorto@gmail.com</p>
 
-          <article class="mini-panel">
-            <h3>
-              Boy Scouts of America
-              <span class="involvement-dates">2018 – Present</span>
-            </h3>
-            <p>
-              Senior Patrol Leader and Eagle Scout candidate in Troop 4, Floral Park, NY, responsible for planning, training, and leading scouts.
-            </p>
-            <p class="mini-panel-link">
-              <a href="scouting.html">See more about Boy Scouts of America →</a>
-            </p>
-          </article>
+            <div class="linkedin-badge-wrapper">
+              <p class="linkedin-badge-title">LinkedIn</p>
 
-          <article class="mini-panel">
-            <h3>
-              Robotics
-              <span class="involvement-dates">2022 – 2025</span>
-            </h3>
-            <p>
-              Experience with 4017 RoboPandas, contributing to fabrication, assembly, testing, and event support at competitions.
+              <!-- Light badge -->
+              <div class="linkedin-badge linkedin-badge-light">
+                <div
+                  class="badge-base LI-profile-badge"
+                  data-locale="en_US"
+                  data-size="medium"
+                  data-theme="light"
+                  data-type="HORIZONTAL"
+                  data-vanity="miles-lucatorto"
+                  data-version="v1">
+                  <a
+                    class="badge-base__link LI-simple-link"
+                    href="https://www.linkedin.com/in/miles-lucatorto?trk=profile-badge">
+                    Miles Lucatorto
+                  </a>
+                </div>
+              </div>
+
+              <!-- Dark badge -->
+              <div class="linkedin-badge linkedin-badge-dark">
+                <div
+                  class="badge-base LI-profile-badge"
+                  data-locale="en_US"
+                  data-size="medium"
+                  data-theme="dark"
+                  data-type="HORIZONTAL"
+                  data-vanity="miles-lucatorto"
+                  data-version="v1">
+                  <a
+                    class="badge-base__link LI-simple-link"
+                    href="https://www.linkedin.com/in/miles-lucatorto?trk=profile-badge">
+                    Miles Lucatorto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- RIGHT COLUMN: In the shop, then Involvement -->
+        <div class="grid-right">
+
+          <!-- In the shop -->
+          <section class="block-card inshop-block">
+            <h2>In the shop</h2>
+            <div class="profile-photo-frame">
+              <!-- REPLACE: your larger working photo -->
+              <img src="PROFILE_SECTION_IMAGE_FILE" alt="Miles working on a project" />
+            </div>
+            <p class="profile-photo-caption">
+              SHORT_CAPTION_PLACEHOLDER
             </p>
-            <p class="mini-panel-link">
-              <a href="robotics.html">See more about Robotics →</a>
-            </p>
-          </article>
-        </section>
+          </section>
+
+          <!-- Involvement (fills the right side under In the shop) -->
+          <section class="block-card involvement-block">
+            <h2>Involvement</h2>
+
+            <article class="mini-panel">
+              <h3>
+                Formula SAE
+                <span class="involvement-dates">2025 – Present</span>
+              </h3>
+              <p>
+                Work on the design and development of a student-built race car, contributing to CAD, packaging, and subsystem collaboration.
+              </p>
+              <p class="mini-panel-link">
+                <a href="sae.html">See more about Formula SAE →</a>
+              </p>
+            </article>
+
+            <article class="mini-panel">
+              <h3>
+                Boy Scouts of America
+                <span class="involvement-dates">2018 – Present</span>
+              </h3>
+              <p>
+                Senior Patrol Leader and Eagle Scout candidate in Troop 4, Floral Park, NY, responsible for planning, training, and leading scouts.
+              </p>
+              <p class="mini-panel-link">
+                <a href="scouting.html">See more about Boy Scouts of America →</a>
+              </p>
+            </article>
+
+            <article class="mini-panel">
+              <h3>
+                Robotics
+                <span class="involvement-dates">2022 – 2025</span>
+              </h3>
+              <p>
+                Experience with 4017 RoboPandas, contributing to fabrication, assembly, testing, and event support at competitions.
+              </p>
+              <p class="mini-panel-link">
+                <a href="robotics.html">See more about Robotics →</a>
+              </p>
+            </article>
+          </section>
+
+        </div>
       </div>
     </section>
 
-    <!-- GALLERY (full width at bottom) -->
+    <!-- GALLERY (full width) -->
     <section class="section">
       <div class="section-inner">
         <div class="gallery-header-row">
