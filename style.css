@@ -1,4 +1,4 @@
-/* Base palette (UConn-inspired) */
+/* UConn-inspired palette */
 :root {
   --uconn-navy: #00112f;
   --uconn-blue-light: #a4cbe1;
@@ -14,7 +14,7 @@
   --border-subtle: rgba(0, 17, 47, 0.1);
 }
 
-/* Dark mode overrides */
+/* Dark mode */
 body.dark-mode {
   --bg: #050814;
   --panel-bg: #0b0f20;
@@ -23,7 +23,7 @@ body.dark-mode {
   --border-subtle: rgba(245, 247, 255, 0.14);
 }
 
-/* Global reset */
+/* Global */
 * {
   box-sizing: border-box;
   font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont,
@@ -58,7 +58,7 @@ body.dark-mode a {
 
 /* Sections */
 .section {
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.6rem;
 }
 
 .section-after-hero {
@@ -69,7 +69,7 @@ body.dark-mode a {
   background: transparent;
 }
 
-/* Two-column layout */
+/* Two-column grid */
 .two-column {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.9fr);
@@ -179,12 +179,41 @@ h3 {
   font-size: 1.2rem;
 }
 
+/* Text */
+p {
+  margin-top: 0.3rem;
+}
+
 /* Lists */
 ul {
   padding-left: 1.2rem;
 }
 
-/* Involvement mini panels */
+/* Large profile image in About section */
+.profile-photo-frame {
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 4 / 3;
+  border-radius: 18px;
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  background: var(--panel-bg);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.profile-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-photo-caption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Involvement cards */
 .mini-panel {
   background: var(--panel-bg);
   border-radius: 16px;
@@ -202,30 +231,6 @@ ul {
   font-size: 0.85rem;
   color: var(--text-muted);
   margin-left: 0.5rem;
-}
-
-/* Large image in skills area */
-.skills-photo-frame {
-  width: 100%;
-  max-width: 520px;
-  aspect-ratio: 4 / 3;
-  border-radius: 18px;
-  border: 1px solid var(--border-subtle);
-  overflow: hidden;
-  background: var(--panel-bg);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
-}
-
-.skills-photo-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.skills-photo-caption {
-  margin-top: 0.6rem;
-  font-size: 0.9rem;
-  color: var(--text-muted);
 }
 
 /* Buttons */
@@ -260,7 +265,7 @@ ul {
   font-size: 0.85rem;
 }
 
-/* Education entries */
+/* Education */
 .school-entry {
   display: flex;
   align-items: center;
@@ -294,9 +299,9 @@ ul {
   color: var(--text-muted);
 }
 
-/* LinkedIn badge wrapper */
+/* LinkedIn badge */
 .linkedin-badge-wrapper {
-  margin-top: 0.9rem;
+  margin-top: 0.6rem;
   max-width: 420px;
 }
 
@@ -308,7 +313,7 @@ ul {
   color: var(--text-muted);
 }
 
-/* linkedIn renders card itself */
+/* LinkedIn renders card UI; we just choose which theme shows */
 .linkedin-badge-light {
   display: block;
 }
@@ -333,11 +338,10 @@ body.dark-mode .linkedin-badge-dark {
 }
 
 .gallery-preview {
-  display: none; /* toggled by JS */
+  display: none; /* toggled by script.js */
   margin-top: 1rem;
 }
 
-/* Gallery layouts */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -370,7 +374,7 @@ body.dark-mode .linkedin-badge-dark {
   margin-top: 0.9rem;
 }
 
-/* Full gallery page (gallery.html) */
+/* Full gallery grid (gallery.html) */
 .gallery-page-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -387,7 +391,7 @@ body.dark-mode .linkedin-badge-dark {
   }
 }
 
-/* Projects page layout (projects.html) */
+/* Projects layout (projects.html) */
 .project-page-grid {
   display: flex;
   flex-direction: column;
@@ -476,7 +480,7 @@ body.dark-mode .bottom-nav {
   color: var(--text-main);
 }
 
-/* Back link (used on other pages) */
+/* Back links (other pages) */
 .back-link {
   margin-top: 0.8rem;
 }
