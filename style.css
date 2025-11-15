@@ -26,7 +26,8 @@ body.dark-mode {
 /* Global reset */
 * {
   box-sizing: border-box;
-  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
 }
 
 body {
@@ -164,7 +165,9 @@ body.dark-mode .hero {
 }
 
 /* Headings */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 0;
 }
 
@@ -181,7 +184,7 @@ ul {
   padding-left: 1.2rem;
 }
 
-/* Mini panels (Involvement cards) */
+/* Involvement mini panels */
 .mini-panel {
   background: var(--panel-bg);
   border-radius: 16px;
@@ -199,6 +202,30 @@ ul {
   font-size: 0.85rem;
   color: var(--text-muted);
   margin-left: 0.5rem;
+}
+
+/* Large image in skills area */
+.skills-photo-frame {
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 4 / 3;
+  border-radius: 18px;
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  background: var(--panel-bg);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.skills-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skills-photo-caption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
 }
 
 /* Buttons */
@@ -267,6 +294,37 @@ ul {
   color: var(--text-muted);
 }
 
+/* LinkedIn badge wrapper */
+.linkedin-badge-wrapper {
+  margin-top: 0.9rem;
+  max-width: 420px;
+}
+
+.linkedin-badge-title {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+/* linkedIn renders card itself */
+.linkedin-badge-light {
+  display: block;
+}
+
+.linkedin-badge-dark {
+  display: none;
+}
+
+body.dark-mode .linkedin-badge-light {
+  display: none;
+}
+
+body.dark-mode .linkedin-badge-dark {
+  display: block;
+}
+
 /* Gallery preview */
 .gallery-header-row {
   display: flex;
@@ -279,7 +337,7 @@ ul {
   margin-top: 1rem;
 }
 
-/* Gallery grids */
+/* Gallery layouts */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -312,7 +370,7 @@ ul {
   margin-top: 0.9rem;
 }
 
-/* Full gallery page (used in gallery.html) */
+/* Full gallery page (gallery.html) */
 .gallery-page-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -376,82 +434,6 @@ ul {
   border-radius: 14px;
   background: var(--panel-bg);
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
-}
-
-/* Contact card / LinkedIn window */
-.contact-card {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 0.9rem;
-  padding: 0.9rem 1rem;
-  border-radius: 16px;
-  background: var(--panel-bg);
-  border: 1px solid var(--border-subtle);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
-}
-
-.linkedin-card {
-  max-width: 420px;
-}
-
-.linkedin-icon-box {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: var(--uconn-navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.linkedin-icon-text {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 1;
-}
-
-.linkedin-text-block {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.linkedin-label {
-  margin: 0;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-muted);
-}
-
-.linkedin-handle {
-  margin: 0;
-  font-weight: 500;
-}
-
-.linkedin-btn {
-  margin-top: 0.3rem;
-  padding: 0.4rem 0.9rem;
-  font-size: 0.85rem;
-  border-radius: 999px;
-  background: var(--uconn-blue-light);
-  border: none;
-  color: #00112f;
-}
-
-body.dark-mode .linkedin-icon-box {
-  background: var(--uconn-blue-light);
-}
-
-body.dark-mode .linkedin-icon-text {
-  color: #00112f;
-}
-
-body.dark-mode .linkedin-btn {
-  background: var(--uconn-navy);
-  color: #ffffff;
 }
 
 /* Footer */
