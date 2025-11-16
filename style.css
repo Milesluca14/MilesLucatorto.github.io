@@ -341,7 +341,7 @@ body.dark-mode .linkedin-badge-dark {
   }
 }
 
-/* Gallery */
+/* Gallery: home page preview */
 .gallery-header-row {
   display: flex;
   justify-content: space-between;
@@ -383,6 +383,49 @@ body.dark-mode .linkedin-badge-dark {
 
 .gallery-more-link {
   margin-top: 0.9rem;
+}
+
+/* Full gallery page mosaic (4 rows x 3 columns, tight block) */
+
+.gallery-intro-text {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* One solid block of 12 images */
+.gallery-mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0; /* no gaps: images pressed together */
+  border-radius: 18px;        /* only outer 4 corners rounded */
+  overflow: hidden;           /* hides inner edges so only outer corners show radius */
+  border: 1px solid var(--border-subtle);
+  background: var(--panel-bg);
+}
+
+.gallery-tile {
+  margin: 0;
+}
+
+.gallery-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 3; /* large consistent tiles */
+}
+
+/* On smaller screens, still keep a clean block but with fewer columns */
+@media (max-width: 720px) {
+  .gallery-mosaic {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-mosaic {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Footer */
