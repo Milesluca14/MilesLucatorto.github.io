@@ -93,6 +93,16 @@ body.dark-mode a {
   background: transparent;
 }
 
+/* About Me bubble (after hero) */
+.section-after-hero .section-inner {
+  background: var(--panel-bg);
+  border-radius: 16px;
+  padding: 1.6rem 1.8rem;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
+  margin-top: 1.8rem; /* spacing below hero */
+}
+
 /* Headings */
 h1,
 h2,
