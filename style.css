@@ -99,7 +99,7 @@ body.dark-mode a {
   padding: 1.6rem 1.8rem;
   border: 1px solid var(--border-subtle);
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
-  margin-top: 1.8rem;
+  margin-top: 2.1rem; /* slightly more space below mid-nav */
 }
 
 /* Hover to match other cards */
@@ -143,6 +143,8 @@ p {
 .btn,
 .bottom-nav,
 .bottom-nav-item,
+.mid-nav,
+.mid-nav-item,
 .school-logo-box,
 .gallery-tile img {
   transition:
@@ -174,7 +176,7 @@ p {
     ),
     var(--uconn-blue-pale);
   border-radius: 20px;
-  padding: 2.8rem 2.3rem;
+  padding: 2.1rem 2.3rem; /* slightly shorter than before */
   border: 1px solid var(--border-subtle);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
   position: relative;
@@ -209,7 +211,7 @@ body.dark-mode .hero {
   z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-  gap: 2.3rem;
+  gap: 2.1rem;
   align-items: center;
 }
 
@@ -234,20 +236,13 @@ body.dark-mode .hero {
 }
 
 .hero-intro {
-  margin-top: 1rem;
+  margin-top: 0.85rem;
   color: var(--text-muted);
 }
 
 .hero-education-line {
   margin-top: 0.5rem;
   font-weight: 500;
-}
-
-.hero-buttons {
-  margin-top: 1.1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
 }
 
 .hero-photo {
@@ -268,8 +263,8 @@ body.dark-mode .hero-photo-frame {
 }
 
 .hero-photo-large {
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 260px; /* slightly smaller to pull everything up visually */
 }
 
 .hero-photo-frame img {
@@ -284,7 +279,7 @@ body.dark-mode .hero-photo-frame {
   box-shadow: 0 24px 56px rgba(0, 0, 0, 0.14);
 }
 
-/* Buttons */
+/* Buttons (used elsewhere, not in hero now) */
 .btn {
   display: inline-block;
   padding: 0.55rem 1.2rem;
@@ -325,6 +320,64 @@ body.dark-mode .hero-photo-frame {
 .btn.tertiary:hover {
   transform: translateY(-1px);
   box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================== */
+/* MID NAV BAR (under hero)   */
+/* =========================== */
+
+.mid-nav {
+  margin: 1.4rem auto 0 auto;
+  padding: 0.7rem 1rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1.1rem;
+
+  background: var(--panel-bg);
+  border-radius: 20px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.10);
+
+  max-width: 780px;
+}
+
+body.dark-mode .mid-nav {
+  background: #0b0f20;
+  border-color: rgba(245, 247, 255, 0.14);
+}
+
+.mid-nav-item {
+  padding: 0.55rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 17, 47, 0.08);
+  cursor: pointer;
+
+  background: var(--panel-bg);
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+.mid-nav-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+body.dark-mode .mid-nav-item {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.linkedin-item {
+  background: linear-gradient(135deg, #0077b5, #004f7c);
+  color: #ffffff !important;
+  border: none;
+}
+
+.linkedin-item:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
 }
 
 /* MAIN GRID */
@@ -507,7 +560,11 @@ body.dark-mode .linkedin-badge-dark {
   }
 
   .hero {
-    padding: 2.1rem 1.7rem;
+    padding: 1.9rem 1.7rem;
+  }
+
+  .mid-nav {
+    max-width: 100%;
   }
 }
 
@@ -569,7 +626,7 @@ body.dark-mode .linkedin-badge-dark {
   transform: scale(1.06);
 }
 
-.gallery-window:hover::after {
+.gallery-window:hover ::after {
   opacity: 1;
 }
 
@@ -709,10 +766,10 @@ body.dark-mode .linkedin-badge-dark {
   backdrop-filter: blur(18px);
   border-radius: 999px;
   border: 1px solid rgba(0, 17, 47, 0.08);
-  padding: 0.45rem 0.7rem;
+  padding: 0.55rem 0.9rem;
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.55rem;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
   z-index: 1000;
 
@@ -729,14 +786,14 @@ body.dark-mode .bottom-nav {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* Slight motion based on scroll direction */
+/* Slight motion based on scroll direction (JS adds classes) */
 body.scrolling-down .bottom-nav {
-  bottom: 18px;
+  bottom: 20px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
 body.scrolling-up .bottom-nav {
-  bottom: 46px;
+  bottom: 44px;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.26);
 }
 
@@ -745,7 +802,7 @@ body.scrolling-up .bottom-nav {
   border: none;
   background: transparent;
   font-size: 0.9rem;
-  padding: 0.45rem 0.9rem;
+  padding: 0.55rem 1.25rem;
   cursor: pointer;
   color: var(--text-main);
   border-radius: 999px;
@@ -763,37 +820,27 @@ body.dark-mode .bottom-nav-item:focus-visible {
   background: rgba(164, 203, 225, 0.32);
 }
 
-/* Optional: style the theme toggle slightly differently */
-.bottom-nav-toggle {
-  border: 1px solid rgba(0, 17, 47, 0.16);
-  background: rgba(255, 255, 255, 0.04);
-}
-
-body.dark-mode .bottom-nav-toggle {
-  border-color: rgba(245, 247, 255, 0.24);
-}
-
 /* Small screens: wrap nav items cleanly */
 @media (max-width: 560px) {
   .bottom-nav {
-    bottom: 24px;
-    padding: 0.4rem 0.6rem;
+    bottom: 26px;
+    padding: 0.45rem 0.7rem;
     flex-wrap: wrap;
     row-gap: 0.25rem;
     max-width: calc(100% - 1.5rem);
   }
 
   body.scrolling-up .bottom-nav {
-    bottom: 36px;
+    bottom: 38px;
   }
 
   body.scrolling-down .bottom-nav {
-    bottom: 12px;
+    bottom: 14px;
   }
 
   .bottom-nav-item {
-    font-size: 0.8rem;
-    padding: 0.35rem 0.7rem;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
   }
 }
 
