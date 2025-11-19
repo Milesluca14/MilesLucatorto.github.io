@@ -12,6 +12,7 @@
   --text-main: #00112f;
   --text-muted: #5c667a;
   --border-subtle: rgba(0, 17, 47, 0.1);
+  --metric-bg: #dedede;
 }
 
 /* Dark mode variables */
@@ -21,6 +22,7 @@ body.dark-mode {
   --text-main: #f5f7ff;
   --text-muted: #a6b0cf;
   --border-subtle: rgba(245, 247, 255, 0.14);
+  --metric-bg: rgba(245, 247, 255, 0.08);
 }
 
 /* Motion / accessibility */
@@ -923,7 +925,7 @@ body.dark-mode .mid-nav-item:hover {
 .metric-card {
   padding: 0.85rem 1.1rem;
   border-radius: 999px;
-  background: #dedede;
+  background: var(--metric-bg);
   box-shadow: var(--shadow-soft);
   display: flex;
   flex-direction: column;
